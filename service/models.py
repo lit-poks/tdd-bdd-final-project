@@ -46,7 +46,7 @@ def init_db(app):
 
 
 class DataValidationError(Exception):
-    """Used for an data validation errors when deserializing"""
+    """Used for a data validation errors when deserializing"""
 
 
 class Category(Enum):
@@ -160,7 +160,7 @@ class Product(db.Model):
         """Initializes the database session
 
         :param app: the Flask app
-        :type data: Flask
+        :type: Flask
 
         """
         logger.info("Initializing database")
@@ -208,7 +208,7 @@ class Product(db.Model):
         """Returns all Products with the given price
 
         :param price: the price to search for
-        :type name: float
+        :type: float
 
         :return: a collection of Products with that price
         :rtype: list
@@ -239,7 +239,7 @@ class Product(db.Model):
         """Returns all Products by their Category
 
         :param category: values are ['MALE', 'FEMALE', 'UNKNOWN']
-        :type available: enum
+        :type: enum
 
         :return: a collection of Products that are available
         :rtype: list
